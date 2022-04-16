@@ -1,0 +1,151 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+*{
+	scrollbar-width: thin;
+}
+::-webkit-scrollbar{
+	width: 5px;
+}
+
+html,
+body{
+	scroll-behavior: smooth;
+	// font-family: 'Gelasio', serif;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+}
+
+/* Change text & background color */
+
+
+a,
+a:hover,
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+button,
+button:hover,
+button:focus,
+button:active {
+	outline: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+h1,h3,h4.h5,h6,h2,p,hr,ul,li,ol{
+	margin: 0;
+}
+p{
+	font-size: 15px;
+}
+
+
+
+
+
+/* Footer Style */
+.footer{
+	padding: 60px 0px 40px 0px;
+	background-color: $black;
+
+	.logo_part{
+		img{
+			width: 349px;
+		}
+		p{
+				color: $white;
+				line-height: 1.4 ;
+				padding-top: 10px;
+		}
+		ul{
+            float: left;
+            li{
+                display: inline-block;
+				padding: 10px 0px;
+                a{
+                    i{
+                        font-size: 16px;
+                        color: $white;
+                        padding: 0 10px;
+                        @include transition(0.3s);
+                        &:hover{
+                            color: $hoverColor;
+                        }
+                    }
+                }
+            }
+        }
+	}
+	.footer_right{
+		h3{
+			color: $red;
+			font-size: 24px;
+			font-weight: 900;
+			line-height: 31px;
+			text-transform: capitalize;	
+			padding-bottom: 16px;		
+		}
+		ul{
+			li{
+				a{
+					color: $white;
+					font-size: 11px;
+					line-height: 24px;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					@include transition(0.3s);
+					&:hover{
+						color: $yellow;
+					}
+					&:hover span{
+						color: $white;
+					}
+					.content{
+						width: 80%;
+						float: left;
+						margin-bottom: 35px;
+						p{
+							font-family: 'Gelasio', serif;
+							font-size: 15px;
+							line-height: 1.1;
+							font-weight: 500;
+							text-transform: capitalize;
+							margin-bottom: 0;
+							
+						}
+						span {
+							font-size: 13px;
+							line-height: 1;
+							font-style: italic;
+							font-weight: 400;
+							@include transition(0.3s);
+						}
+					}
+					margin-bottom: 20px;
+					img{
+						float: right;
+						width: 65px;
+						display: inline-block;
+						padding-left: 10px;
+						margin-bottom: 25px;
+						height: 65px;
+					}
+				}
+			}
+		}
+	}
+}

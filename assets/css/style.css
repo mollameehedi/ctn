@@ -1,0 +1,177 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+* {
+  scrollbar-width: thin; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400; }
+
+/* Change text & background color */
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit; }
+
+button,
+button:hover,
+button:focus,
+button:active {
+  outline: none; }
+
+img {
+  vertical-align: middle; }
+
+ul,
+ol {
+  list-style: none; }
+
+h1, h3, h4.h5, h6, h2, p, hr, ul, li, ol {
+  margin: 0; }
+
+p {
+  font-size: 15px; }
+
+/* Footer Style */
+.footer {
+  padding: 60px 0px 40px 0px;
+  background-color: #000000; }
+  .footer .logo_part img {
+    width: 349px; }
+  .footer .logo_part p {
+    color: white;
+    line-height: 1.4;
+    padding-top: 10px; }
+  .footer .logo_part ul {
+    float: left; }
+    .footer .logo_part ul li {
+      display: inline-block;
+      padding: 10px 0px; }
+      .footer .logo_part ul li a i {
+        font-size: 16px;
+        color: white;
+        padding: 0 10px;
+        -webkit-transition: all linear 0.3s;
+        -moz-transition: all linear 0.3s;
+        -ms-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s;
+        transition: all linear 0.3s; }
+        .footer .logo_part ul li a i:hover {
+          color: #4c4084; }
+  .footer .footer_right h3 {
+    color: #dd3333;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 31px;
+    text-transform: capitalize;
+    padding-bottom: 16px; }
+  .footer .footer_right ul li a {
+    color: white;
+    font-size: 11px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+    margin-bottom: 20px; }
+    .footer .footer_right ul li a:hover {
+      color: #febe2b; }
+    .footer .footer_right ul li a:hover span {
+      color: white; }
+    .footer .footer_right ul li a .content {
+      width: 80%;
+      float: left;
+      margin-bottom: 35px; }
+      .footer .footer_right ul li a .content p {
+        font-family: 'Gelasio', serif;
+        font-size: 15px;
+        line-height: 1.1;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 0; }
+      .footer .footer_right ul li a .content span {
+        font-size: 13px;
+        line-height: 1;
+        font-style: italic;
+        font-weight: 400;
+        -webkit-transition: all linear 0.3s;
+        -moz-transition: all linear 0.3s;
+        -ms-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s;
+        transition: all linear 0.3s; }
+    .footer .footer_right ul li a img {
+      float: right;
+      width: 65px;
+      display: inline-block;
+      padding-left: 10px;
+      margin-bottom: 25px;
+      height: 65px; }
+
+header .header_top {
+  background-color: #000000; }
+  header .header_top ul li {
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0 10px; }
+header .header_bottom .header_weather {
+  line-height: 90px; }
+header .header_bottom .header_img {
+  text-align: center; }
+  header .header_bottom .header_img img {
+    width: auto;
+    height: 90px; }
+header .header_bottom .social_icon {
+  float: right; }
+  header .header_bottom .social_icon li {
+    display: inline-block; }
+    header .header_bottom .social_icon li a i {
+      font-size: 16px;
+      color: #000000;
+      line-height: 90px;
+      padding: 0 10px;
+      -webkit-transition: all linear 0.3s;
+      -moz-transition: all linear 0.3s;
+      -ms-transition: all linear 0.3s;
+      -o-transition: all linear 0.3s;
+      transition: all linear 0.3s; }
+      header .header_bottom .social_icon li a i:hover {
+        color: #4c4084; }
+header nav {
+  text-align: center; }
+  header nav ul .link {
+    display: inline-block;
+    position: relative; }
+    header nav ul .link a {
+      font-family: 'Gelasio', serif;
+      font-size: 14px;
+      line-height: 40px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      padding: 0 14px;
+      display: inline-block; }
+    header nav ul .link .dropdon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: red; }
+      header nav ul .link .dropdon li {
+        display: block; }
+
+/*# sourceMappingURL=style.css.map */

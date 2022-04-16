@@ -1,0 +1,14 @@
+$red:#dd3333;
+$white:white;
+$black:#000000;
+
+$hoverColor: #4c4084;
+$yellow: #febe2b;
+
+@mixin transition($duration) {
+    -webkit-transition: all linear $duration;
+    -moz-transition: all linear $duration;
+    -ms-transition: all linear $duration;
+    -o-transition: all linear $duration;
+    transition: all linear $duration;
+}

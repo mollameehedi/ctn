@@ -1,0 +1,75 @@
+header{
+    .header_top{
+        background-color: $black;
+        ul{
+            li{
+                display: inline-block;
+                color: $white;
+                font-size: 13px;
+                line-height: 22px;
+                padding: 0 10px;                
+            }
+        }
+    }
+    .header_bottom{
+        .header_weather{
+            line-height: 90px;
+        }
+        .header_img{
+        text-align: center;
+        img{
+            width: auto;
+            height: 90px;
+        }
+    }
+        .social_icon{
+            float: right;
+            li{
+                display: inline-block;
+                a{
+                    i{
+                        font-size: 16px;
+                        color: $black;
+                        line-height: 90px;
+                        padding: 0 10px;
+                        @include transition(0.3s);
+                        &:hover{
+                            color: $hoverColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav{
+        text-align: center;
+        ul{
+            .link{
+                display: inline-block;
+                position: relative;
+                a{
+                    font-family: 'Gelasio', serif;
+                    font-size: 14px;
+                    line-height: 40px;
+                    font-weight: 700;
+                    letter-spacing: -0.5px;
+                    padding: 0 14px;
+                    display: inline-block;
+                    
+                    
+                }
+                .dropdon{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: red;
+                    li{
+                        display: block;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
