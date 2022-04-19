@@ -1,0 +1,16 @@
+@media (min-width: 576px) and (max-width: 767px){
+    .header{
+        display: none;
+    }
+    .header_nav{
+        display: block;
+    }
+}
+@media (min-width: 320px) and (max-width: 575px){
+    .header{
+        display: none;
+    }
+    .header_nav{
+        display: block;
+    }
+}

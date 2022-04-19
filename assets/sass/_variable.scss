@@ -12,3 +12,21 @@ $yellow: #febe2b;
     -o-transition: all linear $duration;
     transition: all linear $duration;
 }
+
+.redBg {
+    text-align: center;
+    border-bottom: 2px solid $red;
+
+    h2 {
+        color: #fff;
+        background-color: $red;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+        padding: 5px 10px;
+        margin-bottom: 0px;
+    }
+}
+

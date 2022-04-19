@@ -1,0 +1,227 @@
+// Base
+$color-white: #ffffff;
+$color-black: #000000;
+$color-light: #f1f5f8;
+$color-blue: #148cb8;
+
+$box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+
+
+
+
+
+.open-menu,
+.close-menu {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: $color-black;
+  background: none;
+}
+.open-menu{
+  margin-right: -110px;
+  
+}
+.searBtn{
+  margin-right: -80px;
+}
+.close-menu {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  border: none;
+  outline: none;
+  color: $yellow;
+  background: none;
+}
+
+
+
+.title-large {
+  font-family: inherit;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: inherit;
+  color: $color-black;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+// Header
+.header_nav {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0.75rem 1.5rem;
+  color: $color-black;
+  background:$white;
+  box-shadow: $box-shadow;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+img{
+    width: 210px;
+}
+    .menu-wrapper {
+      .social_icon{
+        li{
+          display: inline-block;
+          a{
+             i {
+              border: none;
+              background-color: transparent;
+              font-size: 14px;
+              width: 40px;
+              height: 40px;
+              line-height: 38px;
+              color: #fff;
+              vertical-align: middle;
+          }
+          }
+        }
+      }
+      &::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+
+      &.offcanvas {
+        .menu {
+          transform: translate3d(0, 0, 0);
+          transition-duration: 0.7s;
+          transition-delay: 0.2s;
+        }
+
+        &::before {
+          background: rgba($color-black, 0.6);
+          z-index: 1;
+        }
+      }
+    }
+
+    .menu {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      max-width: 20rem;
+      width: 100%;
+      padding: 1.5rem 1rem;
+      z-index: 2;
+      overflow-y: auto;
+      color: $color-black;
+      background: linear-gradient(to bottom, rgba(76,64,132,0.9) 0%, rgba(28,24,51,0.9) 100%),
+    /*   ^^^ play with these values to ge the result you want   */
+      /*make sure gradient is first, then url---doesn't work the other way around*/
+      url("../images/sidenavephoto.jpg")
+      center center no-repeat;
+      vertical-align: middle;
+      box-shadow: $box-shadow;
+      transform: translate3d(-100%, 0, 0);
+      transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+      &-block {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+      }
+
+      &-link {
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: inherit;
+        text-transform: capitalize;
+        transition: color 0.35s ease-out;
+
+        &:hover {
+          color: $yellow;
+        }
+      }
+
+      &-item {
+        position: relative;
+
+        a {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 900;
+            font-family: 'Coustard', serif;
+          padding: 0.5rem 1rem;
+          display: block;
+          color: $white;
+          transition: color 0.35s ease-out;
+
+          &:hover {
+            color: $yellow;
+          }
+        }
+
+        &.has-collapsible {
+          position: relative;
+
+          .menu-child {
+            display: none;
+
+            .menu-child-item {
+              a {
+                font-family: 'Literata', serif;
+                  font-size: 14px;
+                  font-weight: 300;
+                  text-transform: uppercase;
+                  padding-left: 50px;
+
+                &:hover {
+                  color: $yellow;
+                }
+              }
+            }
+          }
+
+          span::after {
+            content:'\f054'; 
+    font-family:FontAwesome; 
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: inherit;
+            position: absolute;
+            top: 0.15rem;
+            right: 1rem;
+            color: $white;
+            transition: all 0.35s ease;
+
+            &:hover {
+              color: $yellow;
+            }
+          }
+        }
+
+        &.active {
+          &.has-collapsible {
+            .menu-child {
+              display: block;
+              transition: all 0.35s ease;
+            }
+
+            span::after {
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
